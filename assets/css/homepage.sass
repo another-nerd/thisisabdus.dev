@@ -1,0 +1,116 @@
+---
+---
+
+#homepage
+  display: flex
+  align-items: stretch
+  min-height: 100vh
+  font-size: 1.1rem
+
+  & > aside#sidebar
+    min-width: 5rem
+    max-width: 5rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background: #2A2829
+
+    & > #social-icons
+      text-align: center
+      margin: 1rem auto
+      margin-top: auto
+      position: fixed
+      bottom: 0
+      width: 5rem
+
+      & > a
+        font-size: 2rem
+        color: #ffffff
+        border: none
+        transition: 1s easy all
+
+        &:hover
+          border: none
+          color: red
+
+  & > main#content
+    padding: 1rem 2rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    align-items: center
+  
+    & > nav 
+      text-align: right
+      padding: 1rem 0
+      min-width: 90%
+
+      & > a
+        font-family: 'Playfair Display', serif
+        margin: 0 8px
+
+    & > section#image
+      max-width: 40%
+      min-width: 40%
+      text-align: center
+      position: relative
+
+      & > #mask-image
+        position: absolute
+        background: transparent
+        height: 100%
+        width: 100%
+
+      & > img 
+        max-height: 100%
+        max-width: 100%
+        width: 200px
+        height: 200px
+        border-radius: 50%
+        box-shadow: 0 0 1rem 0 lightgray
+
+    & > section#about-me
+      max-width: 53%
+      min-width: 53%
+
+      & > h1
+        color: #000000
+        font-weight: 900
+        font-size: 3rem
+        margin: 0
+        font-family: 'Playfair Display', serif
+
+  @media (max-width: 650px)
+    flex-direction: column-reverse
+
+    & > aside#sidebar
+      margin-top: 3rem
+      min-width: 100%
+      max-width: 100%
+
+      & > #social-icons
+        display: flex
+        margin: 0 auto
+        margin-right: 10px
+        padding: 1rem 0
+        position: relative
+        width: auto
+
+        & > a
+          margin: 0 10px
+          font-size: 1.5rem
+
+    & > main#content
+      flex-direction: column
+  
+      & > nav 
+        text-align: center
+        min-width: 95%
+
+      & > section#image, 
+      & > section#about-me
+        max-width: 95%
+        min-width: 95%
+    
+      & > section#image
+        margin: 3rem auto

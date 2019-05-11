@@ -2,37 +2,78 @@
 layout: home
 ---
 
-<style>
-  @keyframes bounce {
-    from {
-      transform: translate(0);
-    }
-    to {
-      transform: translateY(30px);
-    }
-  }
-</style>
+<div id="homepage">
+  <!-- Small, slim social sidebar -->
+  <aside id="sidebar">
+    <main id="social-icons">
+      <a href="https://github.com/thisisabdus"
+        ><i class="fab fa-github-alt"></i></a
+      ><br />
+      <a href="https://twitter.com/thisisabdus"
+        ><i class="fab fa-twitter"></i></a
+      ><br />
+      <a href="https://twitter.com/thisisabdus"
+        ><i class="fab fa-linkedin-in"></i></a
+      ><br />
+    </main>
+  </aside>
 
-<div
-  id="hope-page"
-  style="display: flex; height: 95vh; justify-content: space-between; flex-direction: column; align-items: center; color: #646464;"
->
-  <span style="visibility: hidden">for putting that arrow at bottom</span>
-  <div style="text-align: center;">
-    <strong
-      style="font-size: 1.3rem; color: #240041; text-shadow: 2px 2px lightgray;"
-    >
-      @thisisAbdus
-    </strong>
-    <br />
-    <span style="font-size: 1rem; color: #05001d">
-      developer based in Assam, India
-    </span>
-  </div>
-  <span
-    style="margin-bottom: 3rem; font-size: 1.3rem; animation: bounce 1s all; transition: 1s ease all; color: #240041; text-shadow: 3px 3px lightgray"
-    class="bounce"
-  >
-    <!-- <i class="fas fa-arrow-down"> </i> -->
-  </span>
+  <!-- The site content. About me, Nav and Image -->
+  <main id="content">
+    <!-- Navgation Bar -->
+    <nav>
+      <a href="#about-me">About</a>
+      <a href="https://github.com/thisisabdus">Projects</a>
+      <a href="#">Blog</a>
+    </nav>
+
+    <!-- Image -->
+    <section id="image">
+      <div id="mask-image"></div>
+      <img src="/assets/images/me.png" alt="" />
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+      <h1 class="text-shadow-8px">About</h1>
+      <p>
+        My name is Abdus. I am a JavaScript developer living in
+        <a href="https://en.wikipedia.org/wiki/Assam">Assam, India</a>. I
+        started learning how to code in around
+        <a
+          href="https://github.com/thisisabdus/linkclick/commit/ff99fbe65e9f702166d23b165d7f41e7b6711124"
+          >July, 2017</a
+        >. So far, I am enjoying every bit of it!
+      </p>
+      <p>
+        I started my coding journey with C Language! I didn't choose to learn C
+        because I like it but for my college! And trust me, learning C was worth
+        it!
+      </p>
+      <p>
+        After coding in C for a few months, I started learning JavaScript. I
+        choosed JavaScript because I was(still, I am) very much enthusiastic
+        about web development.
+      </p>
+      <p>
+        I aimed to be a good JavaScript developer!
+      </p>
+
+      <!-- Contact Section -->
+      <div id="contact">
+        Say Hi, <a href="mailto:dev.abdus@gmail.com">dev.abdus@gmail.com</a>
+        <i style="color: red" class="fas fa-heart"></i>
+      </div>
+    </section>
+  </main>
 </div>
+<script src="/assets/javascript/functions.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    revealElement('#image', 500);
+    revealElement('#about-me', 700);
+    revealElement('#about-me p', 1000);
+    revealElement('nav', 1200);
+    revealElement('#sidebar', 1500);
+  });
+</script>
