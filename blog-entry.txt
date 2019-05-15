@@ -1,0 +1,13 @@
+---
+permalink: blog-entry.json
+---
+
+[
+  {% for post in site.posts %}
+    {
+      "title": "{{ post.title }}",
+      "permalink": "{{ post.url | absolute_url }}",
+      "date": "{{ post.date }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
