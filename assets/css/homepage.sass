@@ -83,7 +83,7 @@
         margin: 0
         font-family: 'Playfair Display', serif
 
-    & > #blog
+    & > #blog, & > #projects
       min-width: 95%
       max-width: 95%
       
@@ -94,8 +94,11 @@
         margin: 0
         font-family: 'Playfair Display', serif
 
-      & > .post
+      & > .post, & > .project-listing
         margin: .5rem .2rem .5rem 0
+
+        & > .date
+          color: lighten(#000000, 50)
 
   @media (max-width: 650px)
     flex-direction: column-reverse
@@ -132,8 +135,8 @@
       & > section#image
         margin: 3rem auto
 
-      & > #blog
-        & > .post
+      & > #blog, & > #projects
+        & > .post, & > .project-listing
           margin: .7rem 0 .7rem 0
 
           & .date

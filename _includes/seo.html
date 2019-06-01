@@ -1,0 +1,16 @@
+{% if page.url == '/' %}
+<!--  -->
+{% assign title = site.title %}
+<!--  -->
+{% else %}
+<!--  -->
+{% assign title = page.title %}
+<!--  -->
+{% endif %}
+
+<title>{{ title }}</title>
+<meta name="description" content="150 words" />
+
+<meta name="og:title" content="{{ {{ include.title }} }}" />
+<meta name="og:description" content="{{ include.title }}" />
+<meta name="og:image" content="{{ include.title }}" />

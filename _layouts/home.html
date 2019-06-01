@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>{{ sit.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/homepage.css" />
     <link
@@ -17,6 +16,10 @@
       href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,900|Poppins:400,700"
       rel="stylesheet"
     />
+    {% include favicon.html %}
+    <!-- Liquid Include: SEO.HTML -->
+    {% include seo.html %}
+    <!--  -->
   </head>
   <body>
     {{ content }}

@@ -1,0 +1,23 @@
+{% capture license %}{% include svg/license.svg %}{% endcapture %}
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const ENDPOINT = 'https://api.github.com';
+    let projectContainer = document.querySelector('#projects');
+
+    fetch(ENDPOINT + '/users/thisisabdus/repos')
+      .then(data => data.json())
+      .then(data =>
+        data.forEach(d => {
+          projectContainer.innerHTML += `
+          <div class="project-listing">
+            <a style="border-bottom: 2px solid #000;" href="${d.html_url}">${
+            d.name
+          }</a>
+            <div style="margin-top: .7rem">${d.description}</div>
+            <span>${d.license ? `{{ license }} ` + d.license.name : ''}</span>
+          </div>
+        `;
+        })
+      );
+  });
+</script>
