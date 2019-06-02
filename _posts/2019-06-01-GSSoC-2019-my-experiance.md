@@ -6,13 +6,15 @@ tags:
 categories: personal
 ---
 
-**GirlScript Summer of Code**, _aka_ GSSoC, is an initiative taken by [GirlScript Foundation](https://www.girlscript.tech/) Pvt Ltd to expose newbie/experienced coder/programmers to open-source software development.
+**GirlScript Summer of Code**, _aka_ GSSoC, is an initiative taken by [GirlScript Foundation](https://www.girlscript.tech/?utm_source=thisisabdus.dev) Pvt Ltd to expose newbie/experienced coder/programmers to open-source software development.
+
+<img style="background: black" src="https://i.imgur.com/0QumW6x.png" alt="GirlScript Summer of Code Logo" />
 
 This is the second time I am participating as an open-source contributor and both of the time, I have enjoyed it really well! And I am looking forward to GSSoC'20 as well!
 
 ## How did I get into it
 
-I get to know about GirlScript Summer of Code through a friend of mine. Then filled-up _participant's_ form via the [official website](https://gssoc.tech) with all necessary details like Github profile etc. Then, all I could do was, wait!
+I get to know about GirlScript Summer of Code through a friend of mine. Then filled-up _participant's_ form via the [official website](https://gssoc.tech/?utm_source=thisisabdus.dev) with all necessary details like Github profile etc. Then, all I could do was, wait!
 
 ## Choosing the Right Project
 
