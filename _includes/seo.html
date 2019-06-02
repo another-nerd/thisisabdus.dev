@@ -8,7 +8,7 @@ title = page.title %} {% endif %}
 {% else %}{% assign description = page.excerpt %} {% endif %}
 
 <title>{{ title }}</title>
-<meta name="description" content="{{ page.excerpt | strip_html }}" />
+<meta name="description" content="{{ description | strip_html }}" />
 
 <meta name="og:title" content="{{ title }}" />
 <meta name="og:description" content="{{ description | strip_html }}" />
