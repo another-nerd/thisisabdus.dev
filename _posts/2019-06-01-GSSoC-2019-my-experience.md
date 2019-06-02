@@ -4,6 +4,8 @@ title: GSSoC'19 - My Experience!
 tags:
   - summer-of-code
 categories: personal
+meta:
+  image: https://i.imgur.com/0QumW6x.png
 ---
 
 **GirlScript Summer of Code**, _aka_ GSSoC, is an initiative taken by [GirlScript Foundation](https://www.girlscript.tech/?utm_source=thisisabdus.dev) Pvt Ltd to expose newbie/experienced coder/programmers to open-source software development.

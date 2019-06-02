@@ -1,16 +1,21 @@
-{% if page.url == '/' %}
+{% if page.url == '/' %} {% assign title = site.title %} {% elsif
+page.meta.title %} {% assign title = page.meta.title %} {% else %} {% assign
+title = page.title %} {% endif %}
+
 <!--  -->
-{% assign title = site.title %}
-<!--  -->
-{% else %}
-<!--  -->
-{% assign title = page.title %}
-<!--  -->
-{% endif %}
+
+{% if page.meta.description %} {% assign description = page.meta.description %}
+{% else %}{% assign description = page.excerpt %} {% endif %}
 
 <title>{{ title }}</title>
-<meta name="{{ page.excerpt | strip_html }}" content="150 words" />
+<meta name="description" content="{{ page.excerpt | strip_html }}" />
 
 <meta name="og:title" content="{{ title }}" />
-<meta name="og:description" content="{{ page.excerpt | strip_html }}" />
-<meta name="og:image" content="" />
+<meta name="og:description" content="{{ description | strip_html }}" />
+<meta name="og:image" content="{{ page.meta.image }}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta name="twitter:image" content="{{ page.meta.image }}" />
