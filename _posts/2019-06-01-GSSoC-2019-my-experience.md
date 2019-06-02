@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GSSoC'19 - My Experiance!
+title: GSSoC'19 - My Experience!
 tags:
   - summer-of-code
 categories: personal

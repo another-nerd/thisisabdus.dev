@@ -9,8 +9,8 @@
 {% endif %}
 
 <title>{{ title }}</title>
-<meta name="description" content="150 words" />
+<meta name="{{ page.excerpt | strip_html }}" content="150 words" />
 
-<meta name="og:title" content="{{ {{ include.title }} }}" />
-<meta name="og:description" content="{{ include.title }}" />
-<meta name="og:image" content="{{ include.title }}" />
+<meta name="og:title" content="{{ title }}" />
+<meta name="og:description" content="{{ page.excerpt | strip_html }}" />
+<meta name="og:image" content="" />
