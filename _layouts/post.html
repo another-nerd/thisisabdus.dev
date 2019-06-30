@@ -46,6 +46,9 @@
         <!-- Blog Post Content -->
         <div class="post-content">
           <h1 class="text-shadow-8px post-title">{{ page.title }}</h1>
+          <p style="color: #777777">
+            {{ page.date | date: '%B %d, %Y' }}
+          </p>
           {{ content }}
           <p>
             {% include related-post.html %}
