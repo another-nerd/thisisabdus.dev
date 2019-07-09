@@ -21,5 +21,3 @@ fields:
     maxSize: 250
   label: header-image
   description: Meta Image of the post
-pages:
-- _posts/2019-07-09-manjaro-linux-a-review.md
