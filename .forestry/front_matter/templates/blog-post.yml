@@ -17,3 +17,10 @@ fields:
 - type: text
   name: categories
   label: categories
+- name: meta
+  type: include
+  config: {}
+  template: blog-post-meta
+  label: meta
+  description: Blog Meta Content
+  hidden: false
