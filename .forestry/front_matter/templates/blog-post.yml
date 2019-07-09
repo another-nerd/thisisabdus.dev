@@ -35,3 +35,5 @@ fields:
     display_utc: true
   hidden: true
   default: now
+pages:
+- _posts/manjaro-linux-a-review.md
