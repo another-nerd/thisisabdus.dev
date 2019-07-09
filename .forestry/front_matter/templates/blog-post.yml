@@ -15,5 +15,15 @@ fields:
 - type: text
   name: categories
   label: categories
+- name: meta
+  type: blocks
+  label: meta
+  template_types:
+  - blog-post
+  config:
+    min: 
+    max: 
+  hidden: false
+  description: 'site metadata '
 pages:
 - _posts/manjaro-linux.md
