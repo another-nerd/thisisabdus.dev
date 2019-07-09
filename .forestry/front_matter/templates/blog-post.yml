@@ -24,3 +24,14 @@ fields:
   label: meta
   description: Blog Meta Content
   hidden: false
+- name: date
+  type: datetime
+  label: date
+  description: blog post date
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: true
+  hidden: true
+  default: now
