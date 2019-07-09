@@ -25,5 +25,3 @@ fields:
     max: 
   hidden: false
   description: 'site metadata '
-pages:
-- _posts/manjaro-linux.md
