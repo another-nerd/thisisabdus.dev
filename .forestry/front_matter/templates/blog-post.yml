@@ -40,3 +40,5 @@ fields:
     description: 'Post meta/header image '
   label: meta
   hidden: false
+pages:
+- _posts/manjaro-linux-a-review.md
