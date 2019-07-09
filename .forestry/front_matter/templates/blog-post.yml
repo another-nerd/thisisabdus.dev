@@ -8,22 +8,6 @@ fields:
   label: layout
   default: post
   hidden: true
-- type: text
-  name: title
-  label: title
-- type: list
-  name: tags
-  label: tags
-- type: text
-  name: categories
-  label: categories
-- name: meta
-  type: include
-  config: {}
-  template: blog-post-meta
-  label: meta
-  description: Blog Meta Content
-  hidden: false
 - name: date
   type: datetime
   label: date
@@ -35,5 +19,26 @@ fields:
     display_utc: true
   hidden: true
   default: now
+- type: text
+  name: title
+  label: title
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: categories
+  label: categories
+- name: meta
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: '20'
+    label: Header Image
+    description: 'Post meta/header image '
+  label: meta
+  hidden: false
 pages:
 - _posts/2019-07-09-manjaro-linux-a-review.md
