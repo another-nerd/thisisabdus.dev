@@ -6,6 +6,8 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
+  hidden: true
 - type: text
   name: title
   label: title
@@ -15,9 +17,3 @@ fields:
 - type: text
   name: categories
   label: categories
-- name: meta_image
-  type: file
-  config:
-    maxSize: 250
-  label: header-image
-  description: Meta Image of the post
