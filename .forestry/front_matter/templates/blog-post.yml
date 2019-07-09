@@ -15,13 +15,9 @@ fields:
 - type: text
   name: categories
   label: categories
-- name: meta
-  type: blocks
-  label: meta
-  template_types:
-  - blog-post
+- name: meta_image
+  type: file
   config:
-    min: 
-    max: 
-  hidden: false
-  description: 'site metadata '
+    maxSize: 250
+  label: header-image
+  description: Meta Image of the post
