@@ -6,6 +6,8 @@ tags:
 - linux
 categories: linux
 image: "/media/New_logo_tex.png"
+meta:
+  image: "/media/New_logo_tex.png"
 
 ---
 Test From Forestery io
