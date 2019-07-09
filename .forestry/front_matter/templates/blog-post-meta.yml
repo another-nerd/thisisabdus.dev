@@ -1,4 +1,10 @@
 ---
 label: blog-post-meta
 hide_body: false
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: '20'
+  label: header-image
+  description: Blog Post Header/Meta Image
