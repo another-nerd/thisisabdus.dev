@@ -41,5 +41,6 @@ fields:
   label: meta
   hidden: false
 pages:
+- _posts/what-is-dev-null-in-linux.md
 - _posts/customising-debian-buster-and-xfce4-desktop-environment.md
 - _posts/2019-07-09-manjaro-linux-a-review.md
